@@ -1,0 +1,227 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 98%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    background-color: white;
+    color: white;
+    padding: 15px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #A0DEFF;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #A0DEFF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.register-btn {
+    /* background-color: #287b9b; */
+    border-radius: 4px;
+}
+
+.register-btn:hover {
+    background-color: #CAF4FF;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px; /* Adjust based on header height */
+    text-align: center;
+}
+
+h1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #ababab;
+    margin-bottom: 20px;
+}
+
+.jobseeker-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 2px;
+}
+
+.jobseeker-form label {
+    
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.jobseeker-form input {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.jobseeker-form button {
+    font-family: 'Brush Script MT', cursive;    
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    border: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.jobseeker-form button:hover {
+    background-color: #575757;
+}
+
+.row {
+    background-color: aquamarine;
+}
+ 
+.footer {
+    background: #CAF4FF;
+    padding: 5px;
+    color: #343a40;
+}
+
+.footer .containers {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .col-md-6, .footer .col-lg-3 {
+    padding: 25px;
+}
+
+.footer h2, .footer h5 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.footer h2 i, .footer h5 {
+    color: #007bff;
+}
+
+.footer .follows p {
+    margin-bottom: 10px;
+}
+
+.footer .follows span {
+    margin-right: 10px;
+}
+
+.footer .follows a {
+    color: #343a40;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer .follows a:hover {
+    color: #007bff;
+}
+
+.footer .link__list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer .link__item {
+    background: none;
+    padding: 5px 0;
+    border: none;
+}
+
+.footer .link__item a {
+    color: #343a40;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .link__item a:hover {
+    color: #007bff;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .footer .col-md-6 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
